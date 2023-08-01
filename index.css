@@ -464,7 +464,23 @@ select {
 .dot-indicators > [aria-selected="true"] {
   background-color: hsl(var(--clr-white) / 1);
 }
-
+.round-indicators{
+  flex-direction: row;
+  grid-area: buttons
+}
+.round-indicators > *{
+  cursor : pointer;
+  border-radius: 50%;
+  width:5em;
+  background-color: hsl(var(--clr-dark)/0.5);
+  color:hsl(var(--clr-white)/0.5);
+  aspect-ratio: 1;
+  border-color: hsl(var(--clr-dark)/0.5);
+}
+.round-indicators > button:focus{
+  background-color:hsl(var(--clr-white)/0.5) ;
+  color: hsl(var(--clr-dark)/0.5) ;
+}
 /* ----------------------------- */
 /* Page specific background      */
 /* ----------------------------- */
@@ -707,4 +723,27 @@ body {
     align-self: end;
     max-width: 90%;
   }
+
+
+}
+
+/* TECHNOLOGY LAYOUT */
+ .grid-container--technology > picture{
+  grid-area: image;
+  
+ }
+.grid-container--technology > .technology-details{
+  grid-area: content;
+}
+.grid-container--technology{
+  justify-items: start;
+  grid-template-columns: minmax(1rem, 1fr) minmax(0, 37rem) minmax(0, 23rem) minmax(
+    1rem,
+    1fr
+  );
+  grid-template-areas: 
+  ". title  title ."
+  ". buttons   image . "
+  ". content  image  ."
+  ". content  image  .";
 }

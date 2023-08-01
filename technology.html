@@ -76,49 +76,49 @@
       </nav>
     </header>
 
-    <main id="main" class="grid-container grid-container--crew flow">
+    <main id="main" class="grid-container grid-container--technology flow">
       <h1 class="numbered-title">
         <span aria-hidden="true">03</span> Space launch 101
       </h1>
 
       <div
-        class="dot-indicators flex"
+        class="round-indicators flex"
         role="tablist"
-        aria-label="crew member list"
+        aria-label="technology list"
       >
         <button
           aria-selected="true"
-          aria-controls="commander-tab"
+          aria-controls="launch-vehicle-tab"
           role="tab"
-          data-image="commander-image"
+          data-image="launch-vehicle-image"
           tabindex="0"
         >
-          <span class="sr-only">The Launch Vehicle</span>
+          <span class="">01</span>
         </button>
         <button
           aria-selected="false"
-          aria-controls="mission-tab"
+          aria-controls="space-capsule-tab"
           role="tab"
           data-image="space-capsule-image"
           tabindex="-1"
         >
-          <span class="sr-only">The capsule</span>
+          <span class="">02</span>
         </button>
         <button
           aria-selected="false"
-          aria-controls="pilot-tab"
+          aria-controls="spaceport-tab"
           role="tab"
-          data-image="pilot-image"
+          data-image="spaceport-image"
           tabindex="-1"
         >
-          <span class="sr-only">The spaceport</span>
+          <span class="">03</span>
         </button>
       </div>
       <!-- Launch Vehicle -->
       <article
         hidden
-        class="crew-details flow"
-        id="mission-tab"
+        class="technology-details flow"
+        id="launch-vehicle-tab"
         role="tabpanel"
         tabindex="0"
       >
@@ -136,8 +136,8 @@
       </article>
       <!-- Space Capsule -->
       <article
-        class="crew-details flow"
-        id="commander-tab"
+        class="technology-details flow"
+        id="space-capsule-tab"
         role="tabpanel"
         tabindex="0"
       >
@@ -157,8 +157,8 @@
       <!-- Spaceport -->
       <article
         hidden
-        class="crew-details flow"
-        id="pilot-tab"
+        class="technology-details flow"
+        id="spaceport-tab"
         role="tabpanel"
         tabindex="0"
       >
@@ -178,37 +178,30 @@
 
       <picture id="launch-vehicle-image">
         <source
-          srcset="assets/technology/image-launch-vehicle-landscape.jpg"
+          srcset="assets/technology/image-launch-vehicle-portrait.jpg"
           media="(min-width:45rem)"
         />
         <img
-          src="assets/technology/image-launch-vehicle-portrait.jpg"
+          src="assets/technology/image-launch-vehicle-landscape.jpg"
           alt="Launch Vehicle"
         />
       </picture>
       <picture hidden id="space-capsule-image">
         <source
-          srcset="assets/crew/image-mark-shuttleworth.webp"
-          type="image/webp"
+          srcset="assets/technology/image-space-capsule-portrait.jpg"
+          media="(min-width:45rem)"
         />
         <img
-          src="assets/technology/image-space-capsule-portrait.jpg"
+          src="assets/technology/image-space-capsule-landscape.jpg"
           alt="Space Capsule"
         />
       </picture>
-      <picture hidden id="pilot-image">
+      <picture hidden id="spaceport-image">
         <source
-          srcset="assets/crew/image-victor-glover.webp"
-          type="image/webp"
+          srcset="assets/technology/image-spaceport-portrait.jpg"
+          media="(min-width:45rem)"
         />
-        <img src="assets/crew/image-victor-glover.png" alt="Douglas Hurley" />
-      </picture>
-      <picture hidden id="crew-image">
-        <source
-          srcset="assets/crew/image-anousheh-ansari.webp"
-          type="image/webp"
-        />
-        <img src="assets/crew/image-anousheh-ansari.png" alt="Douglas Hurley" />
+        <img src="assets/technology/image-spaceport-landscape.jpg" alt="Spaceport" />
       </picture>
     </main>
   </body>
